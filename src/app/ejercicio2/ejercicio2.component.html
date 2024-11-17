@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Número capicúa</h5>
+      <div class="mb-3">
+        <label for="number" class="form-label">Ingrese un número de dos cifras:</label>
+        <input type="number" id="number" #numberInput class="form-control">
+      </div>
+      <button class="btn btn-primary" (click)="checkCapicua(numberInput.value)">Verificar</button>
+      <p class="mt-3">{{ resultMessage }}</p>
+    </div>
+  </div>
+  
